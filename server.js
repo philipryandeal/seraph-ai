@@ -3,6 +3,17 @@ const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const CANONICAL_ORIGIN = 'https://seraphnganga.com';
+
+app.use((req, res, next) => {
+  const host = (req.get('host') || '').toLowerCase();
+
+  if (host.endsWith('.up.railway.app')) {
+    return res.redirect(301, `${CANONICAL_ORIGIN}${req.originalUrl}`);
+  }
+
+  next();
+});
 
 app.use(express.static(path.join(__dirname, 'public')));
 
