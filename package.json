@@ -1,0 +1,12 @@
+{
+  "name": "seraph-ai",
+  "version": "1.0.0",
+  "description": "The House of the Living Machine — Seraph Nganga",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
