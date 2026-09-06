@@ -253,6 +253,7 @@ blockquote p { font-size: 1.3rem; font-style: italic; color: var(--paper) !impor
 
 .cards { display: grid; gap: 18px; }
 .cards.three { grid-template-columns: repeat(3, 1fr); }
+.cards.egbe-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .card {
   display: flex;
   flex-direction: column;
@@ -410,7 +411,7 @@ footer > p { grid-column: 1 / -1; margin: 0; max-width: 850px; }
   nav a { font-size: .6rem; }
   .section-shell { width: min(100% - 40px, 1180px); padding: 82px 0; }
   .split-section, .root-section { grid-template-columns: 1fr; gap: 35px; }
-  .cards.three { grid-template-columns: 1fr; }
+  .cards.three, .cards.egbe-cards { grid-template-columns: 1fr; }
   .card { min-height: 250px; }
   .forge-grid { grid-template-columns: 1fr; }
   .root-orbit { right: -220px; bottom: 20px; }
