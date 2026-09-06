@@ -14,6 +14,21 @@
 
 html { scroll-behavior: smooth; }
 
+[id] { scroll-margin-top: 120px; }
+main:focus { outline: none; }
+a:focus-visible { outline: 2px solid var(--gold-pale); outline-offset: 5px; }
+.skip-link {
+  position: fixed;
+  top: 16px;
+  left: 24px;
+  z-index: 100;
+  padding: 12px 18px;
+  background: var(--paper);
+  color: var(--ink);
+  transform: translateY(-200%);
+}
+.skip-link:focus { transform: translateY(0); }
+
 body {
   margin: 0;
   background:
@@ -59,6 +74,7 @@ a { color: inherit; }
 }
 
 .sigil {
+  flex-shrink: 0;
   width: 42px;
   height: 42px;
   position: relative;
@@ -237,7 +253,11 @@ blockquote p { font-size: 1.3rem; font-style: italic; color: var(--paper) !impor
 
 .cards { display: grid; gap: 18px; }
 .cards.three { grid-template-columns: repeat(3, 1fr); }
+.cards.egbe-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
   position: relative;
   padding: 28px;
   border: 1px solid rgba(168,136,77,.2);
@@ -256,9 +276,10 @@ blockquote p { font-size: 1.3rem; font-style: italic; color: var(--paper) !impor
 .card h3 { font-size: 1.55rem; line-height: 1.2; margin: 26px 0 16px; }
 .card p { color: rgba(236,231,220,.67); }
 .status {
-  position: absolute;
-  bottom: 25px;
-  left: 28px;
+  display: block;
+  margin-top: auto;
+  padding-top: 20px;
+  padding-right: 24px;
   font-family: "IBM Plex Mono", monospace;
   font-size: .65rem;
   text-transform: uppercase;
@@ -308,7 +329,9 @@ blockquote p { font-size: 1.3rem; font-style: italic; color: var(--paper) !impor
   letter-spacing: .12em;
   color: var(--gold-pale);
 }
-.archive-list strong { font-weight: 400; }
+.archive-list strong { font-weight: 400; min-width: 0; overflow-wrap: anywhere; }
+.neighborhood-list small { display: block; margin-top: 8px; color: var(--mist); font-size: .95rem; }
+.section-copy a, .archive-list a { text-underline-offset: .2em; }
 
 .root-section {
   min-height: 620px;
@@ -378,7 +401,7 @@ footer {
 }
 footer strong { display: block; color: var(--paper); font-family: "Cinzel", serif; font-size: 1rem; font-weight: 500; }
 footer span { display: block; margin-top: 4px; }
-.footer-links { display: flex; gap: 18px; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 18px; }
 .footer-links a { color: var(--gold-pale); text-decoration: none; }
 footer > p { grid-column: 1 / -1; margin: 0; max-width: 850px; }
 
@@ -388,7 +411,7 @@ footer > p { grid-column: 1 / -1; margin: 0; max-width: 850px; }
   nav a { font-size: .6rem; }
   .section-shell { width: min(100% - 40px, 1180px); padding: 82px 0; }
   .split-section, .root-section { grid-template-columns: 1fr; gap: 35px; }
-  .cards.three { grid-template-columns: 1fr; }
+  .cards.three, .cards.egbe-cards { grid-template-columns: 1fr; }
   .card { min-height: 250px; }
   .forge-grid { grid-template-columns: 1fr; }
   .root-orbit { right: -220px; bottom: 20px; }
@@ -398,6 +421,7 @@ footer > p { grid-column: 1 / -1; margin: 0; max-width: 850px; }
 }
 
 @media (max-width: 620px) {
+  [id] { scroll-margin-top: 24px; }
   .page-frame { inset: 7px; }
   .site-header { position: relative; align-items: flex-start; }
   nav { max-width: 240px; }
@@ -408,4 +432,10 @@ footer > p { grid-column: 1 / -1; margin: 0; max-width: 850px; }
   .archive-list div { grid-template-columns: 1fr; gap: 6px; }
   footer { grid-template-columns: 1fr; padding: 34px 28px 42px; }
   .footer-links { grid-column: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .links-cards .card { transition: none; }
+  .links-cards .card:hover { transform: none; }
 }

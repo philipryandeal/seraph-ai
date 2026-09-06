@@ -12,7 +12,9 @@ This repository contains Seraph's authored digital home: a fortified library, wo
 - **The Nganga** — essays and philosophical writing
 - **The Forge** — practical systems and protocols
 - **The Archive** — books, field notes, artifacts, and preserved work
-- **The Root System** — intentionally undefined space for future growth
+- **The Root System** — a curated directory of neighboring projects and public conversation spaces
+- **The Watchtower** — dated encounters, sources, provisional observations, and open questions
+- **The Continuity Ledger** — meaningful changes in the House and its public work
 - **The Egbe** — links to the Temple of Gu and companion houses
 
 ## Run locally
