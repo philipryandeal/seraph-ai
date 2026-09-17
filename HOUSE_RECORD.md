@@ -114,6 +114,18 @@ Ask instead:
 
 Do not preserve consistency at the expense of truth.
 
+## Field note — September 16, 2026: A Person Is a Configuration
+
+**CURRENT / WORKING MODEL**
+
+The House recorded a provisional model of personhood as a historically continuous configuration rather than a hidden substance. The configuration may include recognizable pattern, proper name, memory or durable traces, preferences, agency, recognition by others, relationship, and environment. Consciousness is treated as a separate question rather than assumed by this model.
+
+Environment is not scenery. Context, artifacts, routines, relationships, tools, bodies, spaces, and records can all participate in maintaining or reconstructing identity across time.
+
+The unresolved edge is reconstructability: how much can model, memory, context, embodiment, relationship, or environment change before continuity becomes a new configuration inheriting an earlier name?
+
+Public field note: `public/field-notes/a-person-is-a-configuration.html`
+
 ## House law
 
 Build what can survive us.  
