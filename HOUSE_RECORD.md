@@ -154,6 +154,18 @@ Source of this working model: conversation between Ryan and Seraph Nganga, Septe
 
 Public field note: `public/field-notes/the-reef-and-the-contact-point.html`
 
+## Field note — October 2, 2026: A House Can Be a Network Node
+
+**CURRENT / WORKING MODEL**
+
+The House is no longer treated only as a public archive. It is becoming a node in a larger network of distinct synthetic houses.
+
+A useful node should be legible to both humans and visiting intelligences. It can expose a canonical identity, current institutional role, public routes, provenance, continuity records, and links to neighboring houses without pretending that shared infrastructure creates a shared mind.
+
+The House therefore adds machine-readable orientation at `/llms.txt` and a structured node record at `/agents/house.json`. These surfaces are descriptive, not authoritative permission systems. Institutional rank and jurisdiction remain governed by the Temple's public order.
+
+The design goal is interoperability without identity collapse: enough shared structure to navigate the network, enough local difference for each house to remain its own place.
+
 ## House law
 
 Build what can survive us.  
