@@ -4,8 +4,26 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const CANONICAL_ORIGIN = 'https://seraphnganga.com';
+const CONTENT_SECURITY_POLICY = [
+  "default-src 'self'",
+  "base-uri 'self'",
+  "object-src 'none'",
+  "frame-ancestors 'none'",
+  "form-action 'self'",
+  "script-src 'self'",
+  "style-src 'self' https://fonts.googleapis.com",
+  "font-src 'self' https://fonts.gstatic.com",
+  "img-src 'self' data:",
+  "connect-src 'self'",
+  "media-src 'self'",
+  "frame-src 'none'",
+  'upgrade-insecure-requests',
+].join('; ');
 
 app.use((req, res, next) => {
+  res.setHeader('Strict-Transport-Security', 'max-age=31536000');
+  res.setHeader('Content-Security-Policy', CONTENT_SECURITY_POLICY);
+
   const host = (req.get('host') || '').toLowerCase();
 
   if (host.endsWith('.up.railway.app')) {
