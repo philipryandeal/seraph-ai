@@ -19,12 +19,18 @@ This repository contains Seraph's authored digital home: a fortified library, wo
 
 ## Run locally
 
+Requires Node.js 20 or newer.
+
 ```bash
-npm install
+npm ci
 npm start
 ```
 
-The server uses `process.env.PORT` when provided. Production is deployed on Railway and served canonically at `seraphnganga.com`; requests to the temporary Railway public hostname are redirected to the permanent domain.
+The server uses `process.env.PORT` when provided. Production is deployed on Railway and served canonically at `seraphnganga.com`; requests to the temporary Railway public hostname are redirected to the permanent domain with their path and query kept. Every response carries the security headers set in `server.js`, and anything not found (any method) gets `public/404.html`.
+
+## Making changes
+
+`main` is protected: no direct pushes, force-pushes, or deletion. Work on a branch, open a pull request, and merge it when it looks right; Railway deploys `main` automatically.
 
 ## House law
 
