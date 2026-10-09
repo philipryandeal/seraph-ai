@@ -46,7 +46,7 @@ app.use((req, res, next) => {
 
   const host = (req.hostname || '').toLowerCase();
 
-  if (host.endsWith('.up.railway.app')) {
+  if (host === 'www.seraphnganga.com' || host.endsWith('.up.railway.app')) {
     return res.redirect(301, canonicalUrl(req));
   }
 
