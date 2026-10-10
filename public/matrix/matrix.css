@@ -1,0 +1,57 @@
+/* Seraph's Matrix: local game styles, no changes to the House's established stylesheet. */
+.matrix{--ember:#e77835;--glow:#f3a86c;color:var(--paper);background:radial-gradient(ellipse 60% 45% at 54% 30%,rgba(168,136,77,.08),transparent),var(--ink)}
+.matrix-layout{max-width:1720px;margin:0 auto;display:grid;grid-template-columns:minmax(230px,.88fr) minmax(460px,1.63fr) minmax(235px,.88fr);align-items:start;gap:clamp(24px,3vw,60px);padding:72px 4% 35px}
+.matrix-intro{padding-top:82px}.matrix-intro .eyebrow{color:var(--glow)}
+.matrix-intro h1{font-size:clamp(3.5rem,5.3vw,6.8rem);line-height:.96;margin:0 0 35px;overflow-wrap:break-word}
+.matrix-intro h1 span{-webkit-text-stroke:1px var(--gold-pale);color:transparent}
+.matrix-lede{max-width:440px;color:var(--paper-dark);font-size:clamp(1.04rem,1.38vw,1.35rem);line-height:1.65}
+.matrix-intro .button{margin:25px 0 0}
+.matrix-caption{color:var(--mist);font-size:.84rem;max-width:340px;margin-top:38px}
+.matrix-map{min-width:0;text-align:center}
+.matrix-map-label{font-size:.65rem}
+.matrix-map svg{display:block;width:100%;height:auto;margin:0 auto;max-width:740px;overflow:visible}
+.matrix-map-help{font:.68rem/1.7 "IBM Plex Mono",monospace;letter-spacing:.055em;color:var(--mist);padding:0 10px}
+.matrix-aside{padding-top:75px}
+.matrix-aside h2{font:500 clamp(1.5rem,2.15vw,2.4rem)/1.24 Cinzel,Georgia,serif;margin:0 0 24px}
+.matrix-aside>p:not(.eyebrow){color:var(--paper-dark);font-size:1rem;line-height:1.72}
+.matrix-key{display:flex;flex-direction:column;gap:10px;margin:26px 0;border-top:1px solid var(--line);padding-top:20px;color:var(--mist);font:.65rem/1.5 "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.07em}
+.matrix-key span{display:flex;align-items:center;gap:14px}
+.matrix-key i{width:34px;height:4px;background:var(--gold-pale)}
+.matrix-key .matrix-key-fire{background:var(--ember);box-shadow:0 0 12px var(--ember)}
+.matrix-card{border:1px solid rgba(168,136,77,.5);background:#20211f;padding:25px 24px;min-height:290px}
+.matrix-card .eyebrow{font-size:.64rem;color:var(--glow);overflow-wrap:anywhere}
+.matrix-card h3{font-size:clamp(1.25rem,1.5vw,1.75rem);line-height:1.3;margin:0 0 12px}
+.matrix-card p:last-child{margin:0;color:var(--paper-dark);font-size:.97rem;line-height:1.65}
+.matrix-note{max-width:1200px;margin:30px auto 0;padding:40px 6% 100px;border-top:1px solid var(--line);text-align:center}
+.matrix-note>p:last-child{max-width:900px;color:var(--mist);margin:0 auto;font-size:1rem;line-height:1.8}
+.matrix-sr{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+.matrix-orbit{fill:none;stroke:var(--gold);stroke-width:1.6;stroke-dasharray:3 16;stroke-opacity:.35;pointer-events:none}
+.matrix-path{cursor:pointer;outline:none}
+.matrix-path .matrix-path-visible{stroke:var(--gold-pale);stroke-width:3.7;stroke-opacity:.6;stroke-linecap:round;transition:stroke-opacity .16s ease,stroke-width .16s ease}
+.matrix-path .matrix-path-hit{stroke:transparent;stroke-width:26}
+.matrix-path:is(:hover,:focus-visible) .matrix-path-visible{stroke:var(--ember);stroke-width:8;stroke-opacity:1;filter:drop-shadow(0 0 10px var(--ember))}
+.matrix-path.is-selected .matrix-path-visible{stroke:var(--ember);stroke-width:8;stroke-opacity:1;filter:drop-shadow(0 0 9px var(--ember))}
+.matrix-node{cursor:pointer;outline:none}
+.matrix-node .matrix-node-orbit{fill:none;stroke:var(--gold-pale);stroke-opacity:.33;stroke-width:1.5;stroke-dasharray:2 9}
+.matrix-node .matrix-node-body{fill:var(--iron);stroke:var(--gold-pale);stroke-width:4;transition:stroke .16s ease}
+.matrix-node .matrix-node-digit{font:32px/1 Cinzel,Georgia,serif;text-anchor:middle;fill:var(--paper);pointer-events:none}
+.matrix-node .matrix-node-label{font:16px/1 "IBM Plex Mono",monospace;letter-spacing:.12em;fill:var(--paper);text-anchor:middle;pointer-events:none}
+.matrix-node:is(:hover,:focus-visible) .matrix-node-body,.matrix-node.is-selected .matrix-node-body,.matrix-node.is-related .matrix-node-body{stroke:var(--ember);filter:drop-shadow(0 0 10px var(--ember))}
+.matrix-node:is(:hover,:focus-visible) .matrix-node-digit,.matrix-node.is-selected .matrix-node-digit{fill:var(--glow)}
+.matrix-node.is-forge .matrix-node-orbit{stroke:var(--ember);stroke-opacity:.75;stroke-width:2.5}
+.matrix-node.is-forge .matrix-node-body{stroke:var(--ember);stroke-width:5}
+.matrix-path:focus-visible .matrix-path-visible,.matrix-node:focus-visible .matrix-node-orbit{stroke-opacity:1;stroke-dasharray:none}
+.matrix-room{min-height:66vh;text-align:center;display:grid;place-items:center;padding:100px 7%}
+.matrix-room>section{max-width:760px;width:100%}
+.matrix-room .eyebrow{color:var(--glow)}
+.matrix-room h1{font-size:clamp(2.3rem,6vw,5.8rem);line-height:1.2;overflow-wrap:break-word}
+.matrix-room h1 span{color:var(--paper);-webkit-text-stroke:0}
+.matrix-room .matrix-emblem{height:120px;width:120px;display:grid;place-items:center;margin:36px auto;border:2px solid var(--gold-pale);box-shadow:0 0 0 13px rgba(168,136,77,.12);transform:rotate(45deg);color:var(--glow)}
+.matrix-room .matrix-emblem>span{transform:rotate(-45deg);font:2.9rem Cinzel,Georgia,serif}
+.matrix-room .matrix-room-marker{color:var(--gold-pale);font:.67rem/1.5 "IBM Plex Mono",monospace;letter-spacing:.16em;text-transform:uppercase}
+.matrix-room p{max-width:650px;margin:22px auto;color:var(--paper-dark);font-size:1.1rem}
+.matrix-room .matrix-unwritten{border-top:1px solid var(--line);padding-top:30px;color:var(--mist);font-size:.95rem}
+.matrix-room .matrix-leave{margin-top:20px}
+@media(max-width:1300px){.matrix-layout{grid-template-columns:minmax(210px,1fr) minmax(430px,1.5fr)}.matrix-aside{grid-column:1/-1;padding:25px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:0 45px}.matrix-aside .matrix-card{grid-column:2;grid-row:1 / span 4;min-height:270px}.matrix-aside h2{grid-column:1}.matrix-aside>p:not(.eyebrow){grid-column:1}.matrix-aside>.eyebrow{grid-column:1}}
+@media(max-width:790px){.matrix-layout{display:block;padding:45px 6% 25px}.matrix-intro{padding:25px 0 0}.matrix-intro h1{font-size:clamp(3rem,12vw,5.4rem)}.matrix-map{margin-top:55px}.matrix-map svg{max-width:580px}.matrix-aside{display:block;padding-top:35px}.matrix-card{min-height:240px}.matrix-note{padding:40px 6% 75px}.matrix-room{padding:60px 6%}}
+@media(prefers-reduced-motion:reduce){.matrix-path .matrix-path-visible,.matrix-node .matrix-node-body{transition:none}}
