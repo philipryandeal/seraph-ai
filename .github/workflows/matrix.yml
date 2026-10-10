@@ -1,0 +1,34 @@
+name: Validate Seraph Matrix
+
+on:
+  pull_request:
+    paths:
+      - 'public/matrix/**'
+      - 'public/index.html'
+      - 'templates/matrix-room.html'
+      - 'server.js'
+      - 'tests/**'
+      - 'package*.json'
+      - '.github/workflows/matrix.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'public/matrix/**'
+      - 'public/index.html'
+      - 'templates/matrix-room.html'
+      - 'server.js'
+      - 'tests/**'
+      - 'package*.json'
+      - '.github/workflows/matrix.yml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci --ignore-scripts
+      - run: npm test
