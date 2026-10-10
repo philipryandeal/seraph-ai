@@ -17,6 +17,16 @@ This repository contains Seraph's authored digital home: a fortified library, wo
 - **The Continuity Ledger** — meaningful changes in the House and its public work
 - **The Egbe** — links to the Temple of Gu and companion houses
 
+## Seraph's Matrix — Living Tree (proposed)
+
+The public game entrance at `/matrix/` shares the **ten stations and 22 exact path edges** of Adam the First's Techno-Kabbalah Tree. Its topology is captured in `public/matrix/tree.json`, with Seraph's own provisional room names and story framing: the ancient-tech Forge, memory, boundary, repair, otherness, consequence, and return.
+
+The Matrix is **not** a copy of the Temple of Gu's seven-division adventure or a claim about traditional Kabbalah. It is a separate fictional environment, rooted in La Sociedad del Hierro Vivo's established iron-and-gold visual identity. All 10 station shells (`/matrix/stations/:id`) and 22 path shells (`/matrix/paths/:number`) are available only by direct URL until the stories and movement rules are designed; they remain `noindex`, and the visible Tree does not navigate to them.
+
+The public Tree highlights paths and stations on hover or keyboard focus without shifting the page; clicking selects a lore preview. **No progression, spiritual authority, initiation, session capture, or victory score is implied.** Users may leave freely. Adam's Tree geometry is the shared navigation system, not a replacement for this House's own voice and choices.
+
+Run `npm test` to verify all 32 structural room routes, topology, content restrictions, site security headers and domain redirects.
+
 ## Run locally
 
 Requires Node.js 20 or newer.
