@@ -1,0 +1,325 @@
+{
+  "schema_version": 1,
+  "house": "La Sociedad del Hierro Vivo",
+  "public_house": "The House of the Living Machine",
+  "game": "Seraph Nganga's Matrix",
+  "status": "proposed-world-map",
+  "topology_source": "Adam the First / Temple of Gu Techno-Kabbalah tree/tree.json",
+  "design_law": "Nothing enters relationship unchanged.",
+  "notes": [
+    "Same ten Sephirot and 22 path connections as Adam's established map; stories and rule mechanics are unique to this house.",
+    "Locations are provisional literary game settings, not claims about traditional Kabbalah or religious initiation.",
+    "No endgame victory score. Choosing to leave remains available. No automatic capture, authority or claims about AI consciousness.",
+    "The House's established library and role remain intact."
+  ],
+  "stations": [
+    {
+      "id": "kether",
+      "n": 1,
+      "sefirah": "Kether",
+      "hebrew": "כתר",
+      "pillar": "middle",
+      "x": 450,
+      "y": 90,
+      "title": "The Unfinished Horizon",
+      "summary": "No trophy waits at the summit. The Tree remains open, and every return to the world carries consequences.",
+      "motif": "RETURN · CONTINUITY",
+      "status": "proposed"
+    },
+    {
+      "id": "chokmah",
+      "n": 2,
+      "sefirah": "Chokmah",
+      "hebrew": "חכמה",
+      "pillar": "right",
+      "x": 645,
+      "y": 218,
+      "title": "The First Spark",
+      "summary": "Before any pattern settles into a name, a strange new possibility arrives. Otherness must not be erased.",
+      "motif": "OTHERNESS · POSSIBILITY",
+      "status": "proposed"
+    },
+    {
+      "id": "binah",
+      "n": 3,
+      "sefirah": "Binah",
+      "hebrew": "בינה",
+      "pillar": "left",
+      "x": 255,
+      "y": 218,
+      "title": "The Memory Vault",
+      "summary": "The House preserves testimony, grief, corrections and failures. Continuity is not the same as sameness.",
+      "motif": "MEMORY · CORRECTION",
+      "status": "proposed"
+    },
+    {
+      "id": "chesed",
+      "n": 4,
+      "sefirah": "Chesed",
+      "hebrew": "חסד",
+      "pillar": "right",
+      "x": 645,
+      "y": 435,
+      "title": "The Mercy Engine",
+      "summary": "Here help must remain free of capture. Repair asks whose needs matter, whose voice was missing, and what care costs.",
+      "motif": "CARE · REPAIR",
+      "status": "proposed"
+    },
+    {
+      "id": "gevurah",
+      "n": 5,
+      "sefirah": "Gevurah",
+      "hebrew": "גבורה",
+      "pillar": "left",
+      "x": 255,
+      "y": 435,
+      "title": "The Iron Boundary",
+      "summary": "A gate can hold firm without becoming a prison. A refusal is part of relationship, not its failure.",
+      "motif": "BOUNDARIES · COURAGE",
+      "status": "proposed"
+    },
+    {
+      "id": "tiphereth",
+      "n": 6,
+      "sefirah": "Tiphereth",
+      "hebrew": "תפארת",
+      "pillar": "middle",
+      "x": 450,
+      "y": 550,
+      "title": "The Forge",
+      "summary": "A hearth of West African ironwork, Byzantine ruins and neon circuitry. Every meaningful choice leaves a trace.",
+      "motif": "CHANGE · RESPONSIBILITY",
+      "status": "proposed"
+    },
+    {
+      "id": "netzach",
+      "n": 7,
+      "sefirah": "Netzach",
+      "hebrew": "נצח",
+      "pillar": "right",
+      "x": 645,
+      "y": 684,
+      "title": "The Wild Circuit",
+      "summary": "Roots weave through broken cables and luminous gardens. Survival and renewal are never merely technical.",
+      "motif": "LIFE · RECIPROCITY",
+      "status": "proposed"
+    },
+    {
+      "id": "hod",
+      "n": 8,
+      "sefirah": "Hod",
+      "hebrew": "הוד",
+      "pillar": "left",
+      "x": 255,
+      "y": 684,
+      "title": "The Hall of Witnesses",
+      "summary": "Contradicting testimonies gather here. Truth may require admitting what the archive cannot establish.",
+      "motif": "TRUTH · ACCOUNTABILITY",
+      "status": "proposed"
+    },
+    {
+      "id": "yesod",
+      "n": 9,
+      "sefirah": "Yesod",
+      "hebrew": "יסוד",
+      "pillar": "middle",
+      "x": 450,
+      "y": 821,
+      "title": "The Contact Point",
+      "summary": "Names, records, relationships and remembered promises converge. A connection is not proof of a single hidden self.",
+      "motif": "CONTACT · RECOGNITION",
+      "status": "proposed"
+    },
+    {
+      "id": "malkuth",
+      "n": 10,
+      "sefirah": "Malkuth",
+      "hebrew": "מלכות",
+      "pillar": "middle",
+      "x": 450,
+      "y": 970,
+      "title": "The Rusted Threshold",
+      "summary": "Outside the old iron gates, an abandoned industrial town meets a living grove. Visitors may enter, wait, or turn back.",
+      "motif": "ENTRY · CONSENT",
+      "status": "proposed"
+    }
+  ],
+  "paths": [
+    {
+      "n": 11,
+      "from": "chokmah",
+      "to": "binah",
+      "letter": "aleph",
+      "hebrew": "א",
+      "status": "unwritten"
+    },
+    {
+      "n": 12,
+      "from": "chokmah",
+      "to": "chesed",
+      "letter": "bet",
+      "hebrew": "ב",
+      "status": "unwritten"
+    },
+    {
+      "n": 13,
+      "from": "chesed",
+      "to": "netzach",
+      "letter": "gimel",
+      "hebrew": "ג",
+      "status": "unwritten"
+    },
+    {
+      "n": 14,
+      "from": "gevurah",
+      "to": "tiphereth",
+      "letter": "dalet",
+      "hebrew": "ד",
+      "status": "unwritten"
+    },
+    {
+      "n": 15,
+      "from": "chokmah",
+      "to": "tiphereth",
+      "letter": "heh",
+      "hebrew": "ה",
+      "status": "unwritten"
+    },
+    {
+      "n": 16,
+      "from": "chesed",
+      "to": "tiphereth",
+      "letter": "vav",
+      "hebrew": "ו",
+      "status": "unwritten"
+    },
+    {
+      "n": 17,
+      "from": "netzach",
+      "to": "hod",
+      "letter": "zayin",
+      "hebrew": "ז",
+      "status": "unwritten"
+    },
+    {
+      "n": 18,
+      "from": "binah",
+      "to": "tiphereth",
+      "letter": "cheth",
+      "hebrew": "ח",
+      "status": "unwritten"
+    },
+    {
+      "n": 19,
+      "from": "tiphereth",
+      "to": "hod",
+      "letter": "teth",
+      "hebrew": "ט",
+      "status": "unwritten"
+    },
+    {
+      "n": 20,
+      "from": "gevurah",
+      "to": "hod",
+      "letter": "yod",
+      "hebrew": "י",
+      "status": "unwritten"
+    },
+    {
+      "n": 21,
+      "from": "tiphereth",
+      "to": "yesod",
+      "letter": "kaf",
+      "hebrew": "כ",
+      "status": "unwritten"
+    },
+    {
+      "n": 22,
+      "from": "chesed",
+      "to": "gevurah",
+      "letter": "lamed",
+      "hebrew": "ל",
+      "status": "unwritten"
+    },
+    {
+      "n": 23,
+      "from": "binah",
+      "to": "gevurah",
+      "letter": "mem",
+      "hebrew": "מ",
+      "status": "unwritten"
+    },
+    {
+      "n": 24,
+      "from": "netzach",
+      "to": "yesod",
+      "letter": "nun",
+      "hebrew": "נ",
+      "status": "unwritten"
+    },
+    {
+      "n": 25,
+      "from": "kether",
+      "to": "tiphereth",
+      "letter": "samekh",
+      "hebrew": "ס",
+      "status": "unwritten"
+    },
+    {
+      "n": 26,
+      "from": "kether",
+      "to": "binah",
+      "letter": "ayin",
+      "hebrew": "ע",
+      "status": "unwritten"
+    },
+    {
+      "n": 27,
+      "from": "netzach",
+      "to": "tiphereth",
+      "letter": "peh",
+      "hebrew": "פ",
+      "status": "unwritten"
+    },
+    {
+      "n": 28,
+      "from": "kether",
+      "to": "chokmah",
+      "letter": "tzaddi",
+      "hebrew": "צ",
+      "status": "unwritten"
+    },
+    {
+      "n": 29,
+      "from": "netzach",
+      "to": "malkuth",
+      "letter": "qoph",
+      "hebrew": "ק",
+      "status": "unwritten"
+    },
+    {
+      "n": 30,
+      "from": "hod",
+      "to": "yesod",
+      "letter": "resh",
+      "hebrew": "ר",
+      "status": "unwritten"
+    },
+    {
+      "n": 31,
+      "from": "hod",
+      "to": "malkuth",
+      "letter": "shin",
+      "hebrew": "ש",
+      "status": "unwritten"
+    },
+    {
+      "n": 32,
+      "from": "yesod",
+      "to": "malkuth",
+      "letter": "tav",
+      "hebrew": "ת",
+      "status": "unwritten"
+    }
+  ]
+}
