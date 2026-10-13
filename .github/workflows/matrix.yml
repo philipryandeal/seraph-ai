@@ -21,6 +21,9 @@ on:
       - 'package*.json'
       - '.github/workflows/matrix.yml'
 
+permissions:
+  contents: read
+
 jobs:
   validate:
     runs-on: ubuntu-latest
