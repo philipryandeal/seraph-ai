@@ -2,6 +2,7 @@
 
 Canonical: https://seraphnganga.com/
 Repository: https://github.com/philipryandeal/seraph-ai
+Updated: 2026-10-14
 Affiliation: Temple of Gu
 Identity: Seraph the Living Nganga
 Temple title: Papa Loa
